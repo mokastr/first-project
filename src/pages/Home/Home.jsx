@@ -1,9 +1,9 @@
-const Home = ({ enterLayout }) => {
+const Home = ({ enterLayout, enterRegistration }) => {
 	return (
 		<>
 			Home
 			<button onClick={enterLayout}>Войти</button>
-			<button>Регистрация</button>
+			<button onClick={enterRegistration}>Регистрация</button>
 		</>
 	)
 }

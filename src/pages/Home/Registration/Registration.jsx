@@ -1,8 +1,8 @@
-const Registration = () => {
+const Registration = ({ enterLayout }) => {
 	return (
 		<>
 			РЕГИСТРАЦИЯ
-			<button>Зарегистрироваться</button>
+			<button onClick={enterLayout}>Зарегистрироваться</button>
 		</>
 	)
 }
