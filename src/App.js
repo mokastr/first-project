@@ -1,4 +1,6 @@
+import { BrowserRouter } from 'react-router-dom'
 import { useState } from 'react'
+import { Styles } from './index.styled'
 import Home from './pages/Home/Home'
 import Registration from './pages/Home/Registration/Registration'
 import Layout from './pages/Layout/Layout'
@@ -6,16 +8,17 @@ import Layout from './pages/Layout/Layout'
 function App() {
 	return (
 		<div className="App">
-			<Main />
+			<BrowserRouter>
+				<Main />
+				<Styles />
+			</BrowserRouter>
 		</div>
 	)
 }
 
 function Main() {
 	const [openLayout, setOpenLayout] = useState(true)
-	console.log('Main ~ openLayout:', openLayout)
 	const [openRegistration, setOpenRegistration] = useState(true)
-	console.log('Main ~ openRegistration:', openRegistration)
 	const enterRegistration = () => {
 		setOpenRegistration(!openRegistration)
 	}

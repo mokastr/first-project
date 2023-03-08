@@ -1,8 +1,17 @@
+import { Wrapper } from './Layout.styled'
+import Header from './Header/Header'
+import Sidebar from './Sidebar/Sidebar'
+import Body from './Body/Body'
+import Footer from './Footer/Footer'
+
 const Layout = ({ enterLayout }) => {
 	return (
-		<>
-			<button onClick={enterLayout}>Выйти</button>
-		</>
+		<Wrapper>
+			<Header enterLayout={enterLayout} />
+			<Sidebar />
+			<Body />
+			<Footer />
+		</Wrapper>
 	)
 }
 
