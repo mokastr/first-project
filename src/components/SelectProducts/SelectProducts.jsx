@@ -8,9 +8,7 @@ const SelectProducts = ({
 			value={filterSelectProduct}
 			onChange={event => handlerSelectProduct(event)}
 		>
-			<option selected value={null}>
-				Выберите продукт
-			</option>
+			<option value="">Выберите продукт</option>
 			{products.map(s => {
 				return (
 					<>
